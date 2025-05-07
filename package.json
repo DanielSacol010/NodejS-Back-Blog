@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-back-blog",
+  "version": "1.0.0",
+  "description": "APIrest para Blog de aprendizaje",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielSacol010/NodejS-Back-Blog.git"
+  },
+  "keywords": [],
+  "author": "Daniel Sacol",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "nodejs-back-blog": "file:",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/DanielSacol010/NodejS-Back-Blog/issues"
+  },
+  "homepage": "https://github.com/DanielSacol010/NodejS-Back-Blog#readme"
+}
