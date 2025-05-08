@@ -4,27 +4,22 @@ const publicationSchema = new Schema({
     title: {
         type: String,
         required: true,
-        maxLenghth: [50, "Title is too long"],
+        maxlength: [50, "Title is too long"],
     },
     content: {
         type: String,
         required: true,
-        maxLenghth: [250, "Content is too long"],
+        maxlength: [250, "Content is too long"],
     },
     course: {
         type: String,
         required: true,
         enum: ["Taller III", "Tecnología III", "Práctica Supervisada"]
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now,
-    },
+    }
 },
 {
     versionKey: false,
-    timeStamps: true
-
+    timestamps: true
 })
 
 publicationSchema.methods.toJSON = function(){
