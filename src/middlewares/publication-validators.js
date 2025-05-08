@@ -13,7 +13,7 @@ export const validateCreatePublication = [
     handleErrors
 ]
 
-export const validateGetPublication = [
+export const validateGetPublicationById = [
     param("id").isMongoId().withMessage("Invalid publication ID"),
     validarfields,
     handleErrors
@@ -36,13 +36,6 @@ export const validateUpdatePublication = [
 
 export const validateDeletePublication = [
     param("pid").isMongoId().withMessage("Invalid publication ID"),
-    validarfields,
-    handleErrors
-]
-
-export const validateFilterByCourse = [
-    query("course")
-        .isIn(["Taller III", "Tecnología III", "Práctica Supervisada"]).withMessage("Invalid course value"),
     validarfields,
     handleErrors
 ]

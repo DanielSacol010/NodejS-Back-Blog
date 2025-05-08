@@ -15,7 +15,11 @@ const publicationSchema = new Schema({
         type: String,
         required: true,
         enum: ["Taller III", "Tecnología III", "Práctica Supervisada"]
-    }
+    },
+    comments: [{
+        type: Schema.Types.ObjectId,
+        ref: "Comment"
+    }],
 },
 {
     versionKey: false,

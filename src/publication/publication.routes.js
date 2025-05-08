@@ -3,7 +3,7 @@ import {
   validateCreatePublication,
   validateUpdatePublication,
   validateDeletePublication,
-  validateGetPublication,
+  validateGetPublicationById,
   validateFilterPublications
 } from "../middlewares/publication-validators.js";
 import { 
@@ -19,8 +19,8 @@ const router = Router();
 router.post("/create", validateCreatePublication, createPublication);
 router.get("/list", getPublications);
 router.get("/list/filter", validateFilterPublications, getFilteredPublications);
-router.get("/:id", validateGetPublication, getPublicationById);
-router.put("/update/:pid", validateUpdatePublication, updatePublication);
-router.delete("/delete/:pid", validateDeletePublication, deletePublication);
+router.get("/listById/:id", validateGetPublicationById, getPublicationById);
+router.put("/update/:id", validateUpdatePublication, updatePublication);
+router.delete("/delete/:id", validateDeletePublication, deletePublication);
 
 export default router;
