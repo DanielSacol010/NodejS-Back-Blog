@@ -19,7 +19,7 @@ const router = Router();
 router.post("/create", validateCreatePublication, createPublication);
 router.get("/list", getPublications);
 router.get("/list/filter", validateFilterPublications, getFilteredPublications);
-router.get("/listById/:id", validateGetPublicationById, getPublicationById);
+router.get("/listById/:pid", validateGetPublicationById, getPublicationById);
 router.put("/update/:id", validateUpdatePublication, updatePublication);
 router.delete("/delete/:id", validateDeletePublication, deletePublication);
 

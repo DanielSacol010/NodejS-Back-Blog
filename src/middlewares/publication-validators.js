@@ -14,7 +14,7 @@ export const validateCreatePublication = [
 ]
 
 export const validateGetPublicationById = [
-    param("id").isMongoId().withMessage("Invalid publication ID"),
+    param("pid").isMongoId().withMessage("Invalid publication ID"),
     validarfields,
     handleErrors
 ]

@@ -35,9 +35,9 @@ export const getPublications = async (req, res) => {
 
 export const getPublicationById = async (req, res) => {
     try {
-        const { id } = req.params;
+        const { pid } = req.params;
         // Incluye los comentarios al obtener la publicación por ID
-        const publication = await Publication.findById(id).populate('comments');
+        const publication = await Publication.findById(pid).populate('comments');
         if (!publication) {
             return res.status(404).json({
                 message: "Publication not found"
