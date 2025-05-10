@@ -8,8 +8,7 @@ const publicationSchema = new Schema({
     },
     content: {
         type: String,
-        required: true,
-        maxlength: [250, "Content is too long"],
+        required: true
     },
     course: {
         type: String,
