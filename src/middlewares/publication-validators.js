@@ -1,4 +1,4 @@
-import { body, param, query } from "express-validator"
+import { body, param } from "express-validator"
 import { validarfields } from "./validate-fields.js"
 import { handleErrors } from "./handle-errors.js"
 
@@ -40,13 +40,3 @@ export const validateDeletePublication = [
     handleErrors
 ]
 
-export const validateFilterPublications = [
-    query("course")
-        .optional()
-        .isIn(["Taller III", "Tecnología III", "Práctica Supervisada"]).withMessage("Invalid course value"),
-    query("sort")
-        .optional()
-        .isIn(["asc", "desc"]).withMessage("Sort must be 'asc' or 'desc'"),
-    validarfields,
-    handleErrors
-]

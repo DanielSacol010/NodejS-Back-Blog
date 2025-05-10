@@ -32,12 +32,14 @@ export const getPublications = async (req, res) => {
         });
     }
 };
-
 export const getPublicationById = async (req, res) => {
     try {
         const { pid } = req.params;
-        // Incluye los comentarios al obtener la publicación por ID
-        const publication = await Publication.findById(pid).populate('comments');
+        const publication = await Publication.findById(pid)
+            .populate({
+                path: 'comments',
+                options: { sort: { createdAt: -1 } }
+            });
         if (!publication) {
             return res.status(404).json({
                 message: "Publication not found"
@@ -94,24 +96,4 @@ export const deletePublication = async (req, res) => {
     }
 };
 
-export const getFilteredPublications = async (req, res) => {
-    try {
-        const { course, sort } = req.query;
-        let filter = {};
-        if (course) filter.course = course;
-        let query = Publication.find(filter);
-        if (sort === "desc") {
-            query = query.sort({ createdAt: -1 }); // Más recientes primero
-        } else if (sort === "asc") {
-            query = query.sort({ createdAt: 1 }); // Más antiguos primero
-        }
-        const publications = await query;
-        return res.status(200).json({ publications });
-    } catch (err) {
-        return res.status(500).json({
-            message: "Failed to filter publications",
-            error: err.message
-        });
-    }
-};
 
