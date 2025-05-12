@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "681fe0c074fffef335892a93"
+  },
+  "username": "Daniel",
+  "content": "Cuale son los requerimientos especificos?\n",
+  "publication": {
+    "$oid": "681fdfb374fffef335892a7d"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:26:56.093Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:26:56.093Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe0e974fffef335892a98"
+  },
+  "username": "Marcos",
+  "content": "Puedo ayudarte, llama al 25369874 si te interesa",
+  "publication": {
+    "$oid": "681fdfb374fffef335892a7d"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:27:37.317Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:27:37.317Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe11774fffef335892a9d"
+  },
+  "username": "Roberto",
+  "content": "Hola, me ese proyecto es muy fácil",
+  "publication": {
+    "$oid": "681fdfb374fffef335892a7d"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:28:23.068Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:28:23.068Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe14e74fffef335892aa6"
+  },
+  "username": "Javier",
+  "content": "Interesante, fijate en que sea un proyecto alcanzable",
+  "publication": {
+    "$oid": "681fdf8074fffef335892a7b"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:29:18.368Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:29:18.368Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe16674fffef335892aab"
+  },
+  "username": "Roberto",
+  "content": "Tengo una idea, llamame al 25143698",
+  "publication": {
+    "$oid": "681fdf8074fffef335892a7b"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:29:42.520Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:29:42.520Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe19274fffef335892ab4"
+  },
+  "username": "Messi",
+  "content": "Es este tu proyecto?\n",
+  "publication": {
+    "$oid": "681fdf6274fffef335892a79"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:30:26.040Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:30:26.040Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681fe1b274fffef335892ab9"
+  },
+  "username": "Mario",
+  "content": "interesante",
+  "publication": {
+    "$oid": "681fdf6274fffef335892a79"
+  },
+  "createdAt": {
+    "$date": "2025-05-10T23:30:58.123Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-10T23:30:58.123Z"
+  }
+}]
