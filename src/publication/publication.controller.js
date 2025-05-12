@@ -18,12 +18,7 @@ export const createPublication = async (req, res) => {
 
 export const getPublications = async (req, res) => {
     try {
-        const { course } = req.query;
-        let filter = {};
-        if (course) {
-            filter.course = course;
-        }
-        const publications = await Publication.find(filter);
+        const publications = await Publication.find();
         return res.status(200).json({ publications });
     } catch (err) {
         return res.status(500).json({
@@ -32,6 +27,7 @@ export const getPublications = async (req, res) => {
         });
     }
 };
+
 export const getPublicationById = async (req, res) => {
     try {
         const { pid } = req.params;
